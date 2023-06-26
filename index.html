@@ -1,0 +1,243 @@
+<html>
+	<!doctype html>
+	<head>
+  		<title>PetLove</title>
+  		<meta charset="utf-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      display: flex;
+      flex-direction: column wrap;
+      flex-wrap: wrap;
+    }
+    header{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      font-weight: bold;
+      border-bottom: 1px solid gray;
+      width: 100%;
+      background-color: e3f4fe;
+    }
+    #logo{
+      flex-flow: row wrap;
+      width:59%;
+    }
+    nav{
+      width:40%;
+    }
+    nav a{
+      text-decoration: none;
+      color: black;
+    }
+    ul > li{
+      display: inline-block;
+      margin: 2%;
+      font-size:13px;
+    }
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      border: 1px solid black;
+      background-color: #e3f4fe;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      width: 20%;
+    }
+    .dropdown-content li:hover{
+      background-color: lightgray;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      cursor: pointer;
+    }
+    #prod_destaque{
+      margin-top: 2%;
+      margin-bottom: 1%;
+      margin-left:5%;
+      width: 90%;
+      font-size:14px;
+    }
+    #destaques{
+      margin-left: 5%;
+      width: 90%;
+      align-items: center
+    }
+    #card_destaque{
+      display:flex;
+      flex-flow: row wrap;
+      flex-wrap: wrap;
+    }
+    #card1{
+      border: 1px solid lightgray;
+      margin: 2%;
+      width: 250;
+      height: 100%;
+      font-size: 14px;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    #card2{    
+     border: 1px solid lightgray;
+     margin: 2%;
+     width:  250;
+     height: 100%;
+     font-size: 14px;
+     text-align: center;
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    #destaque_img1{
+     width: 50%;
+     height: 80%;
+    }
+    #texto_destaque1{
+      font-weight: bold;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+     #destaque_img2{
+     width: 50%;
+     height: 80%;
+    }
+    #texto_destaque2{
+      font-weight: bold;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+    #card1 a{
+      text-decoration: none;
+      color: black;
+    }
+    #card2 a{
+      text-decoration: none;
+      color: black;
+    }
+    footer{
+      background-color: e3f4fe;
+      display: flex;
+      width: 100%;
+      height: 5%;
+      padding: 0;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 10px;
+    }
+    #banner{
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+      height: 20%;
+      text-align:center
+    }
+    #img_banner{
+      width: 250;
+      height: 100%;
+    }
+    #text_promo{
+     margin: 1%;
+     margin-top: 4%;
+     margin-bottom: 0;
+     font-weight: bold; 
+    }
+    #promocoes{
+      width: 98%;
+      margin: 1%;
+      display: flex;
+      margin-top: 0;
+      margin-bottom: 2%;
+      flex-flow: row wrap;
+    }
+    .card_promo{
+      margin: 1%;
+      border: 1px solid lightgray;
+      height: 200;
+      width: 140;
+      font-weight: bold;
+      font-size: 12px;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .promos{
+      width: 100%; 
+    }
+  </style>
+  <body>
+    <header>
+      <div id="logo">
+        <h1>PetLovers</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>Login</li>
+          <li class="dropdown">Produtos
+          <ul class="dropdown-content">
+              <li>Ração cachorro</li>
+              <li>Ração gato</li>
+            </ul>
+          </li>
+          <li>Suporte</li>
+          <li><a href="Carrinho.html">Carrinho</a></li>
+        </ul>
+      </nav>  
+    </header>
+    <div id="banner">
+      <img id="img_banner" src="https://casadopet.files.wordpress.com/2018/11/caes-gatos-01.jpg?w=800&h=255&crop=1">
+    </div>
+    <div id="prod_destaque"><h2>Produtos em Destaque</h2></div>
+    <div id="destaques">
+    <div id="card_destaque">
+	  <div id="card1">
+        <a href="prod.html">
+        <div>
+          <img id="destaque_img1" src="https://tanakao.com.br/media/catalog/product/cache/80cc0569059532456037fee68d18b70f/l/a/large_4ff86195-4343-4727-87e4-65620a0d2fc7.png">
+        </div>
+        <div id="texto_destaque1">
+          Ração Pedigree Para Cães Adultos de Raças Pequenas 15Kg<br>
+          Preço: R$ 179,91
+        </div>
+          </a>
+      </div>
+      <div  id="card2">
+      <a href="prod2.html">  
+ 	  <div>
+          <img id="destaque_img2" src="https://tanakao.com.br/media/catalog/product/cache/e31dccbfde34bbf53bb766a4db2095a7/r/a/ra_o_golden_premier_pet_sele_o_natural_para_c_es_filhotes_mini_bits_3110243_10_1kg_l_2.jpg">
+        </div>
+        <div id="texto_destaque2">
+          Ração Seca Golden Seleção Natural Para Filhotes Raças Pequenas 3Kg<br>
+          Preço: R$ 62,90
+        </div>
+        </a>
+      </div>
+   </div>
+   </div>
+    <div id="text_promo">Promoções</div>
+    <div id="promocoes">
+      <div class="card_promo">
+        <img class="promos" src="https://tanakao.com.br/media/catalog/product/cache/b5c456a28cde455ac8fc8973f414ea4e/t/e/temptations.jpg">
+        <span class="txt_promo">R$ 11,20<br>Whiskas temptations salmão para Gatos - 40g</span>
+      </div>
+      <div class="card_promo">
+         <img class="promos" src="https://tanakao.com.br/media/catalog/product/cache/b5c456a28cde455ac8fc8973f414ea4e/p/e/pelo-saudavel.jpg">
+        <span class="txt_promo">R$ 11,20<br>Whiskas temptations salmão para Gatos - 40g</span>
+      </div>
+      <div class="card_promo">
+         <img class="promos" src="https://tanakao.com.br/media/catalog/product/cache/b5c456a28cde455ac8fc8973f414ea4e/a/n/anti-bola-de-pelo.jpg">
+        <span class="txt_promo">R$ 11,20<br>Whiskas temptations salmão para Gatos - 40g</span>
+      </div>
+      <div class="card_promo">
+         <img class="promos" src="https://tanakao.com.br/media/catalog/product/cache/b5c456a28cde455ac8fc8973f414ea4e/r/a/ra_o_zuppy_premium_especial_para_c_es_filhotes_pequeno_porte.jpg">
+        <span class="txt_promo">R$ 20,90<br>
+Ração Zuppy Premium Especial Cães Filhotes Pequeno Porte - 1Kg</span>
+      </div>
+      <div class="card_promo">
+         <img class="promos" src="https://tanakao.com.br/media/catalog/product/cache/b5c456a28cde455ac8fc8973f414ea4e/z/u/zuppy-adultos-pequeno-porte_1_.jpg">
+        <span class="txt_promo">R$ 20,90<br>Ração Zuppy Premium Especial Cães Adultos Pequeno Porte - 1Kg</span>
+      </div>
+    </div>
+   <footer>
+     <p >Todos os direitos reservados. &copy; 2023 Loja de Ração</p></footer>
+  </body>
+</html>

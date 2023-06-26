@@ -1,0 +1,166 @@
+<html>
+	<!doctype html>
+	<head>
+  		<title>PetLover/Prod/title>
+  		<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    header{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      font-weight: bold;
+      border-bottom: 1px solid gray;
+      width: 100%;
+      background-color: e3f4fe;
+    }
+    #logo{
+      flex-flow: row wrap;
+      width:59%;
+    }
+    #logo a{
+	 text-decoration: none;
+     color: black; 
+    }
+    nav{
+      width:40%;
+    }
+    nav a{
+      text-decoration: none;
+      color: black;
+    }
+    ul > li{
+      display: inline-block;
+      margin: 2%;
+      font-size:13px;
+    }
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      border: 1px solid black;
+      background-color: #e3f4fe;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      width: 20%;
+    }
+    .dropdown-content li:hover{
+      background-color: lightgray;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      cursor: pointer;
+    }
+    #prod{
+      display: flex;
+      justify-content:center;
+      margin-top: 5%;
+      width: 100%;
+      height: 100%;
+    }
+    #box_img{
+      display: flex;
+      justify-content: center;
+      margin-right: 10%;
+      width:300px;
+      height: 300;
+    }
+    #prod_img{
+      width:100%;
+      height:100%;  
+      border: 1px solid lightgray;
+    }
+    #descricao{
+      width:250;
+    }
+    #descricao h2{
+      font-size: 20;
+    }
+    #descricao_txt{
+      font-size: 12;
+    }
+    #descricao p{
+       font-size: 12;
+      font-weight: bold;
+	  margin-top: 5%
+    }
+    #btn_qtd{
+      display: flex;
+      border: 1px solid gray;
+      justify-content: space-between;
+      width: 30%;
+      margin-top: 5%
+    }
+    .qtd{
+      border: 1px solid black;
+      width: 20px;
+    }
+    .qtd:hover{
+      cursor: pointer;
+    }
+    .qtd:active{
+     background-color:lightgray;
+    }
+    footer{
+      margin-top:2%;
+      background-color: e3f4fe;
+      display: flex;
+      width: 100%;
+      height: 5%;
+      padding: 0;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 10px;
+    }
+  </style>
+  <body>
+    <header>
+      <div id="logo">
+        <h1><a href="index.html">PetLovers</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li>Login</li>
+          <li class="dropdown">Produtos
+          <ul class="dropdown-content">
+              <li>Ração cachorro</li>
+              <li>Ração gato</li>
+            </ul>
+          </li>
+          <li>Suporte</li>
+          <li><a href="Carrinho.html">Carrinho</a></li>
+        </ul>
+      </nav>  
+    </header>
+    <div id="prod">
+      <div id="box_img">
+      <img id="prod_img" src="https://tanakao.com.br/media/catalog/product/cache/80cc0569059532456037fee68d18b70f/l/a/large_4ff86195-4343-4727-87e4-65620a0d2fc7.png">
+   </div>
+   <div id="descricao">
+     <h2>Ração Pedigree Para Cães Adultos de Raças Pequenas 15Kg</h2>
+     <p id="descricao_txt">
+Composta por ingredientes selecionados e de alta qualidade, essa ração oferece uma combinação equilibrada de proteínas, vitaminas e minerais essenciais para promover a saúde e o bem-estar do seu cão. Ela é formulada para atender às demandas energéticas desses cães, que geralmente possuem metabolismo mais acelerado.
+     </p>
+     <p>Preço:R$ 179,91</p>
+     <p>Peso: 15 Kg</p>
+     <div id="btn_qtd">
+       <button class="qtd">-</button>
+       <span>1</span>
+       <button class="qtd">+</button>
+     </div>
+   </div>
+   </div>   
+   <footer>
+     <p >Todos os direitos reservados. &copy; 2023 Loja de Ração</p></footer>
+  </body>
+</html>
+
+

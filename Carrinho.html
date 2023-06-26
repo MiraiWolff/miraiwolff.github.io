@@ -1,0 +1,265 @@
+<html>
+	<!doctype html>
+	<head>
+  		<title>Petlover/Carrinho</title>
+  		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+      background-color: #fffafa;
+    }
+     header{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      font-weight: bold;
+      border-bottom: 1px solid gray;
+      width: 100%;
+      background-color: #e3f4fe;
+    }
+    #logo{
+      font-size: 20;
+      flex-flow: row wrap;
+      width:59%;
+      text-decoration: none;
+    }
+       #logo a{
+       text-decoration: none;
+       color: black;
+    }
+    nav{
+      width:40%;
+    }
+    ul > li{
+      display: inline-block;
+      margin: 2%;
+      font-size:13px;
+    }
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      border: 1px solid black;
+      background-color: #e3f4fe;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      width: 20%;
+    }
+    .dropdown-content li:hover{
+      background-color: lightgray;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      cursor: pointer;
+    }
+    #carrinho_txt{
+      display: flex;
+      width: 100;
+      height: 5%;
+      align-items: center;
+      margin-left: 2%;
+      margin-top: 2%;
+      font-weight: bold;
+      font-size: 20;   
+    }
+    section{
+      display: flex;
+      flex-direction: column;
+      margin-left: 2%;
+    }
+    table{
+      width: 80%;
+      border-collapse: collapse;
+      border: 2px solid lightgray;
+      background-color: white;
+    }
+    table tr{
+      border-bottom: 2px solid lightgray;
+    }
+    table th{
+      text-align: left;
+      padding-bottom: 2%;
+      padding-left: 1%;
+    }
+    .produtos_img{
+      width:80;
+    }
+    .product{
+	  display: flex;
+      font-size: 12
+      }
+    .info{
+      width: 50px;
+	}
+    table td{
+	  padding: 5px;
+    }
+    .excluir{
+      border-radius:100%;
+      width: 15;
+      height: 15;
+      border: 1px solid gray;
+      font-size: 10
+    }
+    .btn_qtd{
+      width: 15;
+      height: 15;
+      border: 1px solid gray
+    }
+    .final_compra{
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+      justify-content: space-between;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 90%;
+      margin: 2%;
+    }
+    .inf_pag{
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+    }
+    .final_compra h2{
+	   background-color: black;
+       color: white;
+       font-size: 16;
+       text-align:center;
+    }
+    .btn_compra{
+	  width: 100%;
+       border: 1px solid gray
+    }
+    footer{
+      background-color: e3f4fe;
+      display: flex;
+      width: 100%;
+      margin-top: 5%;
+      height: 5%;
+      padding: 0;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 10px;
+    }
+    button:hover{
+      cursor: pointer;
+    }
+    button:active{
+      background-color: lightgray;
+	}
+  </style>
+  <body>
+    <header>
+      <div id="logo">
+        <h1><a href="index.html">PetLovers</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li>Login</li>
+          <li class="dropdown">Produtos
+            <ul class="dropdown-content">
+              <li>Ração cachorro</li>
+              <li>Ração gato</li>
+            </ul>
+          </li>
+          <li>Suporte</li>
+          <li>Carrinho</li>
+        </ul>
+      </nav> 
+    </header>
+    <div id="carrinho_txt">
+      Carrinho
+    </div>
+    <section>
+	  <table>
+       <thead>
+         <tr>
+           <th>Produto</th>
+           <th>Preço</th>
+           <th>Quantidade</th>
+           <th>Total</th>
+           <th>-</th>
+         </tr>
+        </thead>
+       <tbody>
+         <tr>
+           <td>
+             <div class="product">
+                <img class="produtos_img" src="https://tanakao.com.br/media/catalog/product/cache/80cc0569059532456037fee68d18b70f/l/a/large_4ff86195-4343-4727-87e4-65620a0d2fc7.png">
+               <div class="info">
+                 Ração Pedigree Para Cães Adultos de Raças Pequenas 15Kg
+               </div>
+             </div>
+           </td>
+           <td>R$ 179,91</td>
+           <td>
+             <div class="qtd">
+               <button class="btn_qtd">+</button>
+               <span>2</span>
+               <button class="btn_qtd">-</button>
+             </div>
+           </td>
+           <td>R$ 359,82</td>
+           <td>
+             <button class="excluir">x</button>
+           </td>
+         </tr>
+         <tr>
+           <td>
+             <div class="product">
+                <img class="produtos_img" src="https://tanakao.com.br/media/catalog/product/cache/e31dccbfde34bbf53bb766a4db2095a7/r/a/ra_o_golden_premier_pet_sele_o_natural_para_c_es_filhotes_mini_bits_3110243_10_1kg_l_2.jpg">
+               <div class="info">
+                 Ração Seca Golden Seleção Natural Para Filhotes Raças Pequenas 3Kg
+               </div>
+             </div>
+           </td>
+           <td>R$ 62,90</td>
+           <td>
+             <div class="qtd">
+               <button class="btn_qtd">+</button>
+               <span>1</span>
+               <button class="btn_qtd">-</button>
+             </div>
+           </td>
+           <td>R$ 62,90</td>
+           <td>
+             <button class="excluir">x</button>
+           </td>
+         </tr>  
+        </tbody>
+      </table>
+      <div class="final_compra">
+        <div>
+          <h2>
+            Resumo da compra
+          </h2>
+        </div>
+          <div class="inf_pag">
+          <div>Sub Total</div>
+          <div>R$ 422,72</div>
+          </div>
+          <div class="inf_pag">
+          <div>Frete</div>
+          <div>Grátis</div>
+          </div>
+       <button class="btn_compra">
+         Finalizar Compra
+        </button>
+          <button class="btn_compra">
+         Cancelar Compra
+        </button>
+      </div>
+    </section>
+    <footer>
+     <p >Todos os direitos reservados. &copy; 2023 Loja de Ração</p></footer>
+  </body>
+</html>
+
